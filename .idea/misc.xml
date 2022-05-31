@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/projects/RecordsAndStatistics/app/src/main/res/drawable/ic_main_daily.xml" value="0.20885416666666667" />
+        <entry key="..\:/projects/RecordsAndStatistics/app/src/main/res/drawable/ic_main_manage.xml" value="0.20885416666666667" />
+        <entry key="..\:/projects/RecordsAndStatistics/app/src/main/res/drawable/ic_main_statistics.xml" value="0.20885416666666667" />
         <entry key="..\:/projects/RecordsAndStatistics/app/src/main/res/layout/activity_main.xml" value="0.2907608695652174" />
+        <entry key="..\:/projects/RecordsAndStatistics/app/src/main/res/layout/fragment_main.xml" value="0.19270833333333334" />
+        <entry key="..\:/projects/RecordsAndStatistics/app/src/main/res/layout/fragment_test.xml" value="0.19270833333333334" />
+        <entry key="..\:/projects/RecordsAndStatistics/app/src/main/res/menu/main_menu.xml" value="0.19270833333333334" />
       </map>
     </option>
   </component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/custom_item"
+        android:icon="@drawable/ic_main_daily"
+        android:title="@string/main_daily" />
+    <item
+        android:id="@+id/category_item"
+        android:icon="@drawable/ic_main_statistics"
+        android:title="@string/main_statistics" />
+    <item
+        android:id="@+id/instance_item"
+        android:icon="@drawable/ic_main_manage"
+        android:title="@string/main_manage" />
+</menu>
