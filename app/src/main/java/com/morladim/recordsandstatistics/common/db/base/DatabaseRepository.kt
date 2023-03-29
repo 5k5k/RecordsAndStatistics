@@ -1,7 +1,9 @@
-package com.morladim.recordsandstatistics.common.db
+package com.morladim.recordsandstatistics.common.db.base
 
 import android.content.Context
 import androidx.room.Room
+import com.morladim.recordsandstatistics.common.db.PeriodDao
+import com.morladim.recordsandstatistics.common.db.TaskDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -35,6 +37,8 @@ class DatabaseRepository {
             MainDatabase::class.java, "main.db"
         )
 //            .addMigrations(MIGRATION_1_2)
+            //允许丢失现有数据
+            .fallbackToDestructiveMigration()
             .setQueryExecutor(executor).build()
     }
 
@@ -47,8 +51,14 @@ class DatabaseRepository {
 
     @Provides
     @Singleton
-    fun dailyTaskDao(db: MainDatabase): DailyTaskDao {
-        return db.dailyTaskDao()
+    fun taskDao(db: MainDatabase): TaskDao {
+        return db.taskDao()
+    }
+
+    @Provides
+    @Singleton
+    fun periodDao(db: MainDatabase): PeriodDao {
+        return db.periodDao()
     }
 
     @Provides

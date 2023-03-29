@@ -14,6 +14,11 @@ class RecodesAndStatisticsApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         setDebug()
+        appContext = this
+    }
+
+    companion object {
+        lateinit var appContext: RecodesAndStatisticsApplication
     }
 
     private fun setDebug() {

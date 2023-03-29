@@ -3,4 +3,16 @@
     <string name="main_daily">日常</string>
     <string name="main_statistics">统计</string>
     <string name="main_manage">管理</string>
+
+    <array name="manage_items">
+        <item>任务管理</item>
+        <item>周期管理</item>
+        <item>系统设置</item>
+    </array>
+
+    <string name="text_day">天</string>
+    <string name="text_week">周</string>
+    <string name="text_month">月</string>
+    <string name="text_year">年</string>
+
 </resources>

@@ -1,4 +1,4 @@
-package com.morladim.recordsandstatistics.common.db
+package com.morladim.recordsandstatistics.common.db.base
 
 import androidx.room.TypeConverter
 import java.util.*

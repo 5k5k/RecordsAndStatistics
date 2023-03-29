@@ -11,7 +11,7 @@ import androidx.room.Query
  * Created at 2022/5/30
  */
 @Dao
-interface DailyTaskDao {
+interface TaskDao {
 
 //    @Query("SELECT * FROM view_history WHERE path = :path LIMIT 1")
 //    fun findByPath(path: String): LiveData<ViewHistoryEntity?>

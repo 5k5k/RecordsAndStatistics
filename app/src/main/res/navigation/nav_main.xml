@@ -9,24 +9,41 @@
         android:id="@+id/home_view_pager_fragment"
         android:name="com.morladim.recordsandstatistics.main.MainFragment">
         <action
-            android:id="@+id/action_home_view_pager_fragment_to_leetcode_fragment"
-            app:destination="@+id/leetcode_navigation"
+            android:id="@+id/action_home_view_pager_fragment_to_task_manage_fragment"
+            app:destination="@+id/tast_manage_fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+
+        <action
+            android:id="@+id/action_home_view_pager_fragment_to_period_manage_fragment"
+            app:destination="@+id/period_manage_fragment"
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
 
-<!--    <navigation-->
-<!--        android:id="@+id/leetcode_navigation"-->
-<!--        app:startDestination="@id/leetcode_fragment">-->
-<!--        <fragment-->
-<!--            android:id="@+id/leetcode_fragment"-->
-<!--            android:name="com.morladim.mario.leetcode.LeetCodeFragment"/>-->
-<!--    </navigation>-->
+    <fragment
+        android:id="@+id/tast_manage_fragment"
+        android:name="com.morladim.recordsandstatistics.manage.task.TaskManageFragment">
 
-<!--    <fragment-->
-<!--        android:id="@+id/leetcode_detail_fragment"-->
-<!--        android:name="com.morladim.mario.leetcode.LeetCodeDetailFragment">-->
-<!--    </fragment>-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/period_manage_fragment"
+        android:name="com.morladim.recordsandstatistics.manage.period.PeriodManageFragment">
+
+    </fragment>
+    <!--    <navigation-->
+    <!--        android:id="@+id/leetcode_navigation"-->
+    <!--        app:startDestination="@id/leetcode_fragment">-->
+    <!--        <fragment-->
+    <!--            android:id="@+id/leetcode_fragment"-->
+    <!--            android:name="com.morladim.mario.leetcode.LeetCodeFragment"/>-->
+    <!--    </navigation>-->
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/leetcode_detail_fragment"-->
+    <!--        android:name="com.morladim.mario.leetcode.LeetCodeDetailFragment">-->
+    <!--    </fragment>-->
 </navigation>
 
 
